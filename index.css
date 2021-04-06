@@ -1,0 +1,93 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: blueviolet;
+    overflow: hidden;
+}
+
+.gameContainer{
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    width: 100%;
+    height: 100vh;
+}
+
+.gameover{
+   
+    font-size: 50px;
+    top: 50px;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+#scoreCont{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border: 2px solid white;
+    padding: 10px;
+    width: 200px;
+    color: white;
+    font-size: 25px;
+}
+
+
+.girl{
+background-image: url(g2.png);
+background-repeat: no-repeat;
+background-size: cover;
+width: 200px;
+height:300px;
+position: absolute;
+bottom: 0px;
+left: 190px;
+}
+
+.obstacle{
+background-image: url(gang2.png);
+background-repeat: no-repeat;
+background-size: cover;
+position: absolute;
+width: 200px;
+height:300px;
+bottom: 0;
+left: 44vw;
+}
+
+.animateGirl{
+    animation: girl 0.9s linear;
+}
+
+@keyframes girl{
+    0%{
+        bottom: 20px;
+    }
+    50%{
+        bottom: 600px;
+    }
+    100%{
+        bottom: 20px; 
+        
+    }
+}
+
+.obstacleAni{
+    animation: obstacleAni 5s linear infinite ;
+}
+
+@keyframes obstacleAni{
+
+0%{
+    left: 100vw;
+}
+100%{
+    left: -10vw;
+}
+
+}
+
